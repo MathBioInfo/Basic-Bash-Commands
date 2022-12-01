@@ -1,11 +1,10 @@
 # Basic-Bash-Commands
-grep 'Branch' infile | awk '{print $3 "\t" $4}'| sed 's/(n=//'| sed 's/(//'|sed 's/)//'| awk  '$2!=""' > outfile
 
-## sed
+## `sed`
 
-## grep
+## `grep`
 
-## awk
+## `awk`
 If we want to print the first column from a file called "inputfile,"  we can use
 `awk '{print $1}' inputfile`
 `awk '{print $0}' inputfile`
@@ -37,3 +36,5 @@ awk 'length($1) > 3' inputfile
 will print column 1 if the there are more than 3 characters. 
 
 ## find
+
+`grep 'Branch' infile | awk '{print $3 "\t" $4}'| sed 's/(n=//'| sed 's/(//'|sed 's/)//'| awk  '$2!=""' > outfile`
