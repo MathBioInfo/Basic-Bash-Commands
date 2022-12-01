@@ -6,12 +6,19 @@
 
 ## `awk`
 If we want to print the first column from a file called "inputfile,"  we can use
+
 `awk '{print $1}' inputfile`
+
 `awk '{print $0}' inputfile`
-will print everything. which is the same as 
+
+will print everything. which is the same as
+
 `awk '{print}' inputfile`
+
 The following commond
+
 `awk '{print $NF}'`
+
 will print the last columns.
 
 `awk` assumes that 'spaces' are field separators by default, but we can change the field separator to any symbol in `awk`
@@ -26,6 +33,7 @@ The following commond will print different columns, separated by ":" and the out
 Columns 1, 2, and 3 in the input file will be separated by ":" in the output file, and out will be separated by "\t."
 
 `awk 'BEGIN{FS=":"; OFE="-"} {print $1, $2, $3}' inputfile`
+
 This is saying to find the ":" treat them as field separators, and as output, print "-" as a field separator. 
 
 `awk -F "/" '/^\// {print $1}'`
