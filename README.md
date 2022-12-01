@@ -40,7 +40,8 @@ This is saying to find the ":" treat them as field separators, and as output, pr
 
 treat "/" as a field separator and will search for every line that starts with '/' which is represented by "/," and print the first column of each line. 
 
-awk 'length($1) > 3' inputfile
+`awk 'length($1) > 3' inputfile`
+
 will print column 1 if the there are more than 3 characters. 
 
 ## find
