@@ -1,10 +1,10 @@
 # Basic-Bash-Commands
 
-## `sed`
+### `sed`
 
-## `grep`
+### `grep`
 
-## `awk`
+### `awk`
 If we want to print the first column from a file called "inputfile,"  we can use
 
 `awk '{print $1}' inputfile`
@@ -44,7 +44,7 @@ treat "/" as a field separator and will search for every line that starts with '
 
 will print column 1 if the there are more than 3 characters. 
 
-## find
+### find
 The following commond will use `grep` to select all lines starting with word 'Branch' from infile then pipe it and use `awk` to select column 3 and column 4 (separate them by \t) then pipe it (using `sed`) to delete 'n=' pipe it to replace '(' by space or delet it. The output is then piped to delet ')' usind `sed` and finally using `awk` to print column 2. The result willbe stored in 'outfile'
 
 `grep 'Branch' infile | awk '{print $3 "\t" $4}'| sed 's/(n=//'| sed 's/(//'|sed 's/)//'| awk  '$2!=""' > outfile`
