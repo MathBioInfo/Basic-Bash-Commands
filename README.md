@@ -1,5 +1,10 @@
 # Basic-Bash-Commands
 
+### `echo`
+`echo` is similar to print and will print whatever you type. For example
+`echo "Welcome"`
+will primt "Welcome"
+
 ### `sed`
 
 ### `grep`
